@@ -7,6 +7,10 @@
 h2 {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
+	font-style: normal;
+	font-weight: 800;
+	letter-spacing: -0.2px;
+	color: #143341;
 }
 button {
 	border-radius: 0;
@@ -27,10 +31,7 @@ button {
 button {
 	text-transform: none;
 }
-[type="button"],
-button {
-	-webkit-appearance: button;
-}
+
 [type="button"]::-moz-focus-inner,
 button::-moz-focus-inner {
 	padding: 0;
@@ -38,7 +39,6 @@ button::-moz-focus-inner {
 }
 h2 {
 	margin-bottom: 0.5rem;
-	font-weight: 500;
 	line-height: 1.2;
 }
 h2 {
@@ -292,10 +292,12 @@ h2 {
 	align-items: stretch;
 }
 .page .page-content .page-header {
-	height: 30px;
+	height: 28px;
 	font-size: 100%;
 	text-transform: uppercase;
 	text-align: center;
+	text-wrap: balance;
+	line-height: 1.2;
 }
 .page .page-content .page-image {
 	height: 100%;
@@ -306,7 +308,7 @@ h2 {
 .page .page-content .page-text {
 	height: 100%;
 	flex-grow: 1;
-	font-size: 80%;
+	font-size: 16px;
 	text-align: justify;
 	margin-top: 10px;
 	padding-top: 10px;
@@ -353,4 +355,20 @@ h2 {
 .stf__item {
 	display: none;
 	position: absolute;
+}
+
+#new settings
+.row {
+	display: flex;
+}
+.row.center {
+	justify-content: center;
+	display: flex;
+}
+.row.twocolumns {
+	display: flex;
+	justify-content: space-around;
+}
+figcaption {
+	font-size: 12px;
 }
